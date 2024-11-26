@@ -57,7 +57,7 @@ export default function Home() {
           <div className="hero-blue">
             <div>
               <h1><small>Hi I'm</small>
-                Adrian Twarog
+                Alex Wong
               </h1>
               <p>
                 Design and Developer in Australia who creates educational ontent on YouTube to teach others about HTML, CSS and Javascript. <span>I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
