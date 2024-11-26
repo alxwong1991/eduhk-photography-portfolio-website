@@ -60,7 +60,7 @@ export default function Home() {
                 Alex Wong
               </h1>
               <p>
-                Design and Developer in Australia who creates educational ontent on YouTube to teach others about HTML, CSS and Javascript. <span>I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
+                Student at the Educational University of Hong Kong <span>I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
               </p>
               <div className="call-to-action">
                 <a href="./Sample_Resume_Template.pdf" className="button black">
