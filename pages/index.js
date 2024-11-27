@@ -148,7 +148,7 @@ export default function Home() {
             <div className="right-column">
               <h3>A bit about me</h3>
               <p>
-                I’m currently a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. I’m passionate about exploring how emerging technologies, like artificial intelligence, can transform learning experiences and enhance creativity.
+                Right now I am a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. I’m passionate about exploring how emerging technologies, like artificial intelligence, can transform learning experiences and enhance creativity.
               </p>
               <p>
                 In my free time, I enjoy photography, which allows me to capture and share moments of beauty and inspiration. I also love working on projects that combine my technical skills with creativity, such as building interactive applications and designing user-focused solutions.
