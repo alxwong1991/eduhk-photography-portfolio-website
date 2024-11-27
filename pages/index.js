@@ -146,15 +146,15 @@ export default function Home() {
               </ul>
             </div>
             <div className="right-column">
-              <h3>A bit about me</h3>
+              <h3>A Bit About Me</h3>
               <p>
-                Right now I am a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. I’m passionate about exploring how emerging technologies, like artificial intelligence, can transform learning experiences and enhance creativity.
+                I am currently a final-year student at the Educational University of Hong Kong, majoring in Artificial Intelligence and Educational Technology. I am passionate about exploring how emerging technologies, such as artificial intelligence, can transform learning experiences and foster creativity.
               </p>
               <p>
-                In my free time, I enjoy photography, which allows me to capture and share moments of beauty and inspiration. I also love working on projects that combine my technical skills with creativity, such as building interactive applications and designing user-focused solutions.
+                In my free time, I enjoy photography, which allows me to capture and share moments of beauty and inspiration. I also love working on projects that combine my technical skills with creativity, such as building interactive applications and designing user-centric solutions.
               </p>
               <p>
-                I’m currently honing my skills in web development, artificial intelligence, and creative tools, while actively seeking opportunities to apply my knowledge in real-world projects. My aim is to create applications that bridge the gap between technology and education, making learning more engaging and accessible for everyone.
+                Currently, I am honing my skills in web development, artificial intelligence, and creative tools while actively seeking opportunities to apply my knowledge to real-world projects. My goal is to create applications that bridge the gap between technology and education, making learning more engaging and accessible for everyone.
               </p>
             </div>
           </div>
