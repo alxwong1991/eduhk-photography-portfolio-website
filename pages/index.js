@@ -42,7 +42,7 @@ export default function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="mailto:hello@adriantwarog.com" className="button">Contact Me</a>
+              <a href="mailto:alxwong1991@gmail.com" className="button">Contact Me</a>
             </li>
           </ul>
           <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
@@ -56,25 +56,26 @@ export default function Home() {
         <section className="hero container">
           <div className="hero-blue">
             <div>
-              <h1><small>Hi I'm</small>
-                Alex Wong
+              <h1>
+                <small>Hi, I'm</small> Alex Wong
               </h1>
               <p>
-                Student at the Educational University of Hong Kong <span>I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
+                I’m a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. My favorite hobby is photography, and I enjoy exploring how technology can enhance creativity and learning.
+                Feel free to <strong>view my resume</strong> to learn more about my skills and experience, or <strong>contact me</strong> directly via email. Additionally, you can check out my GitHub and LinkedIn profiles.
               </p>
               <div className="call-to-action">
-                <a href="./Sample_Resume_Template.pdf" className="button black">
+                <a href="./CV Wong Sau Hang Alex.pdf" className="button black">
                   View Resume
                 </a>
-                <a href="mailto:hello@adriantwarog.com" className="button white">
+                <a href="mailto:alxwong1991@gmail.com" className="button white">
                   Contact Me
                 </a>
               </div>
               <div className="social-links">
-                <a href="#">
+                <a href="https://github.com/alxwong1991">
                   <img src="./imgs/github.png" alt="GitHub" width="48" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/alex-wong-892613a5/">
                   <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
                 </a>
               </div>
@@ -90,21 +91,25 @@ export default function Home() {
               <img src="./imgs/html.png" alt="HTML" width="128" />
               <img src="./imgs/css.png" alt="CSS" width="128" />
               <img src="./imgs/javascript.png" alt="JS" width="128" />
-              <img src="./imgs/sass.png" width="128" alt="Sass" />
+              {/* <img src="./imgs/sass.png" width="128" alt="Sass" /> */}
               <img src="./imgs/react.png" width="128" alt="React" />
               <img src="./imgs/nextjs.png" width="128" alt="Next JS" />
-              <img src="./imgs/azure.png" width="128" alt="Azure" />
+              {/* <img src="./imgs/azure.png" width="128" alt="Azure" /> */}
               <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+              <img src="./imgs/figma.png" width="131" alt="Figma" />
+              <img src="./imgs/lightroom.png" width="122" alt="Lightroom" />
               <img src="./imgs/python.png" width="128" alt="Python" />
               <img src="./imgs/html.png" alt="HTML" width="128" />
               <img src="./imgs/css.png" alt="CSS" width="128" />
               <img src="./imgs/javascript.png" alt="JS" width="128" />
-              <img src="./imgs/sass.png" width="128" alt="Sass" />
+              {/* <img src="./imgs/sass.png" width="128" alt="Sass" /> */}
               <img src="./imgs/react.png" width="128" alt="React" />
               <img src="./imgs/nextjs.png" width="128" alt="Next JS" />
-              <img src="./imgs/azure.png" width="128" alt="Azure" />
+              {/* <img src="./imgs/azure.png" width="128" alt="Azure" /> */}
               <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+              <img src="./imgs/figma.png" width="131" alt="Figma" />
               <img src="./imgs/python.png" width="128" alt="Python" />
+              <img src="./imgs/lightroom.png" width="122" alt="Lightroom" />
             </div>
           </div>
         </section>
@@ -115,82 +120,131 @@ export default function Home() {
           </h2>
           <div className="holder-blue">
             <div className="left-column">
-              <h3>Frontend</h3>
+              <h3>Programming</h3>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>Python</li>
                 <li>JavaScript</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vue</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Java</li>
+                <li>HTML & CSS</li>
               </ul>
-              <h3>Backend</h3>
+              {/* <h3>Backend</h3>
               <ul>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>Python</li>
+                <li>Flask</li>
                 <li>Java</li>
-                <li>PHP</li>
-                <li>Ruby</li>
+              </ul> */}
+              <h3>Creative</h3>
+              <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
               </ul>
             </div>
             <div className="right-column">
               <h3>A bit about me</h3>
               <p>
-                Hi I'm Adrian Twarog, a designer and developer who creates educational content on YouTube to teach others about HTML, CSS and JavaScript.  I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days!
+                Hi, I’m Alex Wong, a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. I’m passionate about exploring how emerging technologies, like artificial intelligence, can transform learning experiences and enhance creativity.
               </p>
               <p>
-                I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+                In my free time, I enjoy photography, which allows me to capture and share moments of beauty and inspiration. I also love working on projects that combine my technical skills with creativity, such as building interactive applications and designing user-focused solutions.
+              </p>
+              <p>
+                I’m currently honing my skills in web development, artificial intelligence, and creative tools, while actively seeking opportunities to apply my knowledge in real-world projects. My aim is to create applications that bridge the gap between technology and education, making learning more engaging and accessible for everyone.
               </p>
             </div>
           </div>
         </section>
-        <section className="work-experience container">
-          <h2>
-            <small>Recent</small>
-            Work Experience
+        {/* <section id="skills" className="skills container">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+            <small className="block text-lg text-gray-600">About Me</small>
+            Skills
           </h2>
-          <div className="jobs">
+          <div className="holder-blue grid grid-cols-1 md:grid-cols-2 gap-8 bg-blue-100 p-8 rounded-lg">
+            <div>
+              <h3 className="text-2xl font-semibold text-blue-900">Programming</h3>
+              <ul className="mt-4 space-y-2 text-gray-700">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Java</li>
+                <li>HTML & CSS</li>
+              </ul>
+              <h3 className="text-2xl font-semibold text-blue-900 mt-6">Creative</h3>
+              <ul className="mt-4 space-y-2 text-gray-700">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold text-blue-900">A bit about me</h3>
+              <p className="mt-4 text-gray-700">
+                Hi, I’m Alex Wong, a student at the Educational University of Hong Kong, majoring in AI and Educational Technology. I’m passionate about exploring how emerging technologies, like artificial intelligence, can transform learning experiences and enhance creativity.
+              </p>
+              <p className="mt-4 text-gray-700">
+                In my free time, I enjoy photography, which allows me to capture and share moments of beauty and inspiration. I also love working on projects that combine my technical skills with creativity, such as building interactive applications and designing user-focused solutions.
+              </p>
+              <p className="mt-4 text-gray-700">
+                I’m currently honing my skills in web development, artificial intelligence, and creative tools, while actively seeking opportunities to apply my knowledge in real-world projects. My aim is to create applications that bridge the gap between technology and education, making learning more engaging and accessible for everyone.
+              </p>
+            </div>
+          </div>
+        </section> */}
+        <section className="photography-projects container">
+          <h2>
+            <small>My collection</small>
+            Photography Albums
+          </h2>
+          <div className="projects">
             <article>
               <figure>
                 <div>
-                  <img src="./imgs/workplace-1.jpg" alt="Workplace 1 - YouTube Creator" width="100%" />
+                  <a href="https://adobe.ly/3CNM6gw" target="_blank" rel="noopener noreferrer">
+                    <img src="./imgs/finedine.jpg" width="100%" />
+                  </a>
                   <figcaption>
-                    Workplace - 1 YouTube Creator
+                    The camera always eats first
                   </figcaption>
                 </div>
               </figure>
-              <h3>YouTube Content Creator</h3>
-              <div>2020-current</div>
-              <p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
+              <h3>Fine Dine Dishes</h3>
+              <p>A collection of artistic dishes and elegant decorations.</p>
             </article>
             <article>
               <figure>
                 <div>
-                  <img src="./imgs/workplace-2.jpg" alt="Workplace 2 - Moshi Moshi Marketing" width="100%" />
+                  <a href="https://adobe.ly/3XUBovE" target="_blank" rel="noopener noreferrer">
+                    <img src="./imgs/hartiubdayparty.jpg" width="100%" />
+                  </a>
                   <figcaption>
-                    Workplace - Moshi Moshi Marketing
+                    A cute corgi turned 3 years old!
                   </figcaption>
                 </div>
               </figure>
-              <h3>Moshi Moshi Marketing</h3>
-              <div>20018-2020</div>
-              <p>Marketing agency building websites and programming them from the ground up. </p>
+              <h3>Hartiu's Birthday Party</h3>
+              <p>Hartiu's birthday party celebration with friends and fellow paw pals.</p>
             </article>
             <article>
               <figure>
                 <div>
-                  <img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
+                  <a href="https://adobe.ly/4g2Li5N" target="_blank" rel="noopener noreferrer">
+                    <img src="./imgs/lightpaint.jpg" width="100%" />
+                  </a>
                   <figcaption>
-                    Workplace - Chamber of Commerce
+                    Light being's invasion
                   </figcaption>
                 </div>
               </figure>
-              <h3>Chamber of Commerce</h3>
-              <div>2013-2018</div>
-              <p>A small to large business organisation that helps facilitate advice and support.</p>
+              <h3>Light Painting</h3>
+              <p>Exploring and experimenting with the art of light painting.</p>
             </article>
-
           </div>
         </section>
         <section id="projects" className="bento container">
@@ -198,26 +252,60 @@ export default function Home() {
             <small>
               Assignment 1
             </small>
-            Completed Projects
+            School Shootings
           </h2>
           <div className="bento-grid">
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-1.jpg" alt="BGCCI" width="100%" />
+              <img src="./imgs/a1(1).jpg" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-2.jpg" alt="Churhview" width="100%" />
+              <img src="./imgs/a1(2).jpg" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-3.jpg" alt="Harley" width="100%" />
+              <img src="./imgs/a1(3).jpg" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-5.jpg" alt="Bunbury" width="100%" />
+              <img src="./imgs/a1(4).jpg" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-6.jpg" alt="Running" width="100%" />
+              <img src="./imgs/a1(5).jpg" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-7.jpg" alt="School" width="100%" />
+              <img src="./imgs/a1(6).jpg" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a1(7).jpg" width="100%" />
+            </a>
+          </div>
+        </section>
+        <section id="projects" className="bento container">
+          <h2>
+            <small>
+              Assignment 2
+            </small>
+            Outdoor Shootings
+          </h2>
+          <div className="bento-grid">
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(1).jpg" alt="BGCCI" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(2).jpg" alt="Churhview" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(3).jpg" alt="Harley" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(4).jpg" alt="Bunbury" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(5).jpg" alt="Running" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(6).jpg" alt="School" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./imgs/a2(7).jpg" alt="School" width="100%" />
             </a>
           </div>
         </section>
