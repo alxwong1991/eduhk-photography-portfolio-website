@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,10 +18,41 @@ const geistMono = localFont({
 export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Ref for the menu
+  const toggleRef = useRef(null); // Ref for the toggle button
 
+  // Toggle the menu when the toggle button is clicked
   const toggleMobileMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
+    setMenuOpen((prev) => !prev); // Toggle the menuOpen state
+  };
+
+  // Close the menu when a link is clicked
+  const closeMobileMenu = () => {
+    setMenuOpen(false); // Close the menu
+  };
+
+  // Close the menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Check if the click target is outside both the menu and the toggle button
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        toggleRef.current &&
+        !toggleRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false); // Close the menu
+      }
+    };
+
+    // Attach the event listener to detect clicks outside
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -31,23 +62,60 @@ export default function Home() {
           <div className="logo-text">Portfolio Website</div>
         </a>
         <nav>
-          <ul id="menu">
+          {/* Main Menu */}
+          <ul
+            id="menu"
+            className={menuOpen ? "open" : ""}
+            ref={menuRef} // Attach ref to the menu
+          >
             <li>
-              <a href="#">Home</a>
+              <a href="#" onClick={closeMobileMenu}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={closeMobileMenu}>
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={closeMobileMenu}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="mailto:alxwong1991@gmail.com" className="button">Contact Me</a>
+              <a
+                href="mailto:alxwong1991@gmail.com"
+                className="button"
+                onClick={closeMobileMenu}
+              >
+                Contact Me
+              </a>
             </li>
           </ul>
-          <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
-            <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+
+          {/* Mobile Toggle */}
+          <a
+            href="#"
+            className="mobile-toggle"
+            onClick={toggleMobileMenu}
+            ref={toggleRef} // Attach ref to the toggle button
+          >
+            <svg
+              className="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeWidth="2"
+                d="M5 7h14M5 12h14M5 17h10"
+              />
             </svg>
           </a>
         </nav>
